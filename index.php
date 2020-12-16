@@ -104,6 +104,23 @@ $questions = [
                     ?>
                 </div>
             </main>
+            <footer>
+                <div class="container">
+                    <div class="footer-left">
+                        <ul>
+                            <li v-for="item in footerMenuItems">
+                                <a href="#">{{ item }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-right">
+                        <select class="languages" name="">
+                            <option value="">Italiano</option>
+                            <option value="">English</option>
+                        </select>
+                    </div>
+                </div>
+            </footer>
         </div>
 
         <script src="dist/app.js" charset="utf-8"></script>

@@ -12586,7 +12586,8 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#root',
   data: {
-    menuItems: ['Introduzione', 'Norme sulla privacy', 'Termini di servizio', 'Tecnologie', 'Domande frequenti']
+    menuItems: ['Introduzione', 'Norme sulla privacy', 'Termini di servizio', 'Tecnologie', 'Domande frequenti'],
+    footerMenuItems: ['Google', 'Tutto su Google', 'Privacy', 'Termini']
   }
 });
 

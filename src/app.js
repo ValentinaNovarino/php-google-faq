@@ -10,6 +10,12 @@ var app = new Vue (
                 'Termini di servizio',
                 'Tecnologie',
                 'Domande frequenti',
+            ],
+            footerMenuItems: [
+                'Google',
+                'Tutto su Google',
+                'Privacy',
+                'Termini',
             ]
         }
     }
