@@ -12,6 +12,7 @@ h1 {
     font-size: $titleFont;
     color: $titleColor;
     padding-top: $spacing * 3;
+    line-height: 32px;
 }
 
 p {
@@ -19,4 +20,5 @@ p {
     font-size: $pFont;
     color: $pColor;
     padding-top: $spacing;
+    line-height: 32px;
 }

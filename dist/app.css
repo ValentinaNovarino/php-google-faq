@@ -6469,7 +6469,7 @@ template {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -6482,6 +6482,7 @@ h1 {
   font-size: 24px;
   color: #3c4043;
   padding-top: 60px;
+  line-height: 32px;
 }
 
 p {
@@ -6489,6 +6490,7 @@ p {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.87);
   padding-top: 20px;
+  line-height: 32px;
 }
 
 header {
@@ -6497,6 +6499,7 @@ header {
 header .header-top {
   padding: 20px;
   padding-bottom: 0;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
 }
@@ -6521,6 +6524,10 @@ header .header-top .app i {
 }
 header .header-top .app img {
   border-radius: 50%;
+  cursor: pointer;
+}
+header .app img:hover {
+  box-shadow: 3px black;
 }
 header .header-bottom {
   border-bottom: 1px solid rgba(151, 151, 151, 0.5);
@@ -6540,6 +6547,11 @@ header .header-bottom .menu ul li a {
   text-decoration: none;
   color: #5f6368;
   font-size: 15px;
+  padding: 15px;
+}
+
+li:last-child a {
+  border-bottom: 3px solid #3367d6;
 }
 
 footer {
