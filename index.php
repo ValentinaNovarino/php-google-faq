@@ -74,7 +74,7 @@ $questions = [
                 <div class="header-bottom">
                     <div class="menu">
                         <ul>
-                            <li v-for="item in menuItems">
+                            <li class="menu" v-for="item in menuItems">
                                 <a href="#">{{ item }}</a>
                             </li>
                         </ul>
