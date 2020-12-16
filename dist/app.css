@@ -6477,6 +6477,20 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3c4043;
+  padding-top: 60px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-top: 20px;
+}
+
 header {
   color: #5f6368;
 }
