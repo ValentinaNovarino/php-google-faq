@@ -1,5 +1,7 @@
 <?php
 /*strutturiamo un array che contiene tutte le domande e le relative risposte.*/
+
+$answer1 =
 $questions = [
     [
         "question" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -51,28 +53,59 @@ $questions = [
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="dist/app.css">
         <title>Google-faq</title>
     </head>
     <body>
-        <?php
-        foreach ($questions as $currentQuestion) { ?>
-            <h1>
-                <?php
-                echo $currentQuestion['question'];
-                ?>
-            </h1>
-            <?php
-            foreach ($currentQuestion['answer'] as $paragraphReply) { ?>
-                <p>
+        <div id="root">
+            <header>
+                <div class="header-top">
+                    <div class="logo">
+                        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+                        <span>Privacy e termini</span>
+                    </div>
+                    <div class="app">
+                        <i class="fas fa-th"></i>
+                        <img src="https://lh3.googleusercontent.com/ogw/ADGmqu8punG6l64ig2wSySydJiSat8ukO3D6j-92tWiU=s32-c-mo" alt="">
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="menu">
+                        <ul>
+                            <li v-for="item in menuItems">
+                                <a href="#">{{ item }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
                     <?php
-                    echo $paragraphReply;
+                    foreach ($questions as $currentQuestion) { ?>
+                        <h1>
+                            <?php
+                            echo $currentQuestion['question'];
+                            ?>
+                        </h1>
+                        <?php
+                        foreach ($currentQuestion['answer'] as $paragraphReply) { ?>
+                            <p>
+                                <?php
+                                echo $paragraphReply;
+                                ?>
+                            </p>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                    }
                     ?>
-                </p>
-                <?php
-            }
-            ?>
-            <?php
-        }
-        ?>
+                </div>
+            </main>
+        </div>
+
+        <script src="dist/app.js" charset="utf-8"></script>
     </body>
 </html>
